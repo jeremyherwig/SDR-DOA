@@ -1,17 +1,28 @@
 """
-
 Linear Phased Array DOA Estimator - 2-Element Tests
 
 Written by Jeremy Herwig
+
+Spyder IDE is recommended. 
+
+IMPORTANT - READ BEFORE RUNNING: 
+
+This script creates a new plot for every buffer samples on the PlutoSDR.
+It is recommended that you use an IDE that shows the plots in the same window
+as the working environment (such as the Spyder IDE), and not an IDE that produces 
+a new plot everytime plt.show() is called. 
+
+adi and libiio packages are required. Pluto drivers are also required:
+
+https://wiki.analog.com/university/tools/pluto/users/quick_start
+
+https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio
 
 Methods used -
 
 - Delay and Sum
 - Minimum Variance Distortionless Response (MVDR) - Capon's Method
 - MUltiple SIgnal Classification Algorithm (MUSIC)
-
-Written by Jeremy Herwig
-
 """
 
 'Load Required Libraries'
