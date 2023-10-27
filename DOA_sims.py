@@ -102,6 +102,8 @@ else:
     plt.show()
 'Simulate DOA Estimators -----------------------------------------------------'
 'DAS Method ---'
+for i in range(N):
+    X[i,:] = np.fft.fft(x[i,:])
 angles = np.arange(-scan_range,scan_range,1)    # array containing scanning angles
 signal_power_DAS = []       # initialise variable to record measured signal strength
 for angle in angles:    
